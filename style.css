@@ -1,0 +1,98 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0; 
+    position: relative;
+    text-align: center; /* Ensures the text within child elements is centered */
+}
+
+#particles-js {
+    width: 100%; 
+    height: 100%; 
+    background:#000; 
+    background: linear-gradient(45deg, #e91e63, #ff9880);
+    overflow: hidden;
+}
+
+.container { 
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    position: relative; 
+}
+
+.typer {
+    font-size: 5em; 
+    letter-spacing: 10px;
+    font-family: Courier; 
+    font-weight: 500;
+    border-right: 5px solid; 
+    padding-top: 0; 
+    padding-bottom: 0;
+    margin-top: 0; 
+    margin-bottom: 0; 
+    width: 100%; 
+    white-space: nowrap;
+    overflow: hidden; 
+    animation:
+        typing 2s steps(15), /*remove for smoother animation, indicate character num steps*/
+        cursor .4s step-end infinite alternate;
+}
+
+.fade-intro {
+    font-size:2em; 
+    font-weight: 100; 
+    font-family: calibri;
+    align-items: center;
+    animation: fade-up 1s ease 3s backwards;
+}
+
+.nav {
+    list-style-type: none;
+    text-align: center; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.nav li{
+    display: inline-block; 
+    /* font-size: 2em;  */
+    padding: 1em; 
+}
+
+@keyframes cursor {
+    50% { border-color: transparent}
+}
+
+@keyframes typing {
+    from { width: 0}
+}
+
+@keyframes fade-down {
+   0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9); 
+   } 
+
+   100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1); 
+   }
+}
+
+@keyframes fade-up {
+    0% {
+     opacity: 0;
+     /* transform: translateY(30px) scale(0.9);  */
+    } 
+ 
+    100% {
+     opacity: 1;
+     /* transform: translateY(0px) scale(1);  */
+    }
+ }
