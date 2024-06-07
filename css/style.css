@@ -17,6 +17,10 @@ div,p {
     padding: 0; 
 }
 
+img {
+    border-radius: 50%;
+}
+
 #wrapper {
     padding: 0; 
     box-sizing:border-box; 
@@ -50,6 +54,11 @@ div,p {
     left: 0 */
 }
 
+.resize {
+    width: 300px; 
+    height: auto; 
+    bottom: 50px; 
+}
 .container { 
     display: inline-block;
     vertical-align: middle;
