@@ -8,21 +8,47 @@ body {
     padding: 0; 
     position: relative;
     text-align: center; /* Ensures the text within child elements is centered */
+    background: transparent;
 }
+
+div {
+    background: transparent; 
+}
+
+#wrapper {
+    padding: 30px; 
+    box-sizing:border-box; 
+    position: relative; 
+    z-index: 100;
+}
+
+/* #particles-js canvas {
+    display: block;
+    vertical-align: bottom;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+    transition: opacity .8s ease, transform 1.4s ease
+} */
+
 
 #particles-js {
     width: 100%; 
     height: 100%; 
-    position: absolute; 
-    background:#000; 
-    background: linear-gradient(45deg, #e91e63, #ff9880);
+    position: fixed; 
+    background:#ffffff; 
+    background: linear-gradient(45deg, #858585, #dadada);
     overflow: hidden;
+    /* use to make background non interactive */
+    /* z-index: -10;
+    top: 0;
+    left: 0 */
 }
 
 .container { 
     display: inline-block;
-    justify-content: center;
-    align-items: center;
     vertical-align: middle;
     position: relative; 
 }
@@ -49,8 +75,7 @@ body {
     font-size:2em; 
     font-weight: 100; 
     font-family: calibri;
-    align-items: center;
-    animation: fade-up 1s ease 3s backwards;
+    animation: fade-in 1s ease 3s backwards;
 }
 
 .nav {
@@ -86,14 +111,12 @@ body {
    }
 }
 
-@keyframes fade-up {
+@keyframes fade-in {
     0% {
      opacity: 0;
-     /* transform: translateY(30px) scale(0.9);  */
     } 
  
     100% {
      opacity: 1;
-     /* transform: translateY(0px) scale(1);  */
     }
  }
