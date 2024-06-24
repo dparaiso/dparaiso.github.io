@@ -4,8 +4,8 @@
 <head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <title>Danieva Personal Website</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div id="wrapper">
@@ -20,12 +20,17 @@
                 <li><a href="#about-section">About me</a></li>
                 <li><a href="https://github.com/dparaiso/">Github</a></li>
                 <li><a href="https://linkedin.com/in/danievaparaiso01">LinkedIn</a></li>
-                <li>
-                <div class="dropdown">Resume
+                <li><a href="#">Resume</a>
+                    <ul class="dropdown">
+                        <li><a href=#>Data Science</a></li>
+                        <li><a href=#>Software Dev</a></li>
+                    </ul>
+                <!-- <div class="dropdown">Resume
                 <div class="dropdown-options">
                     <a href="#">Software Dev</a>
                     <a href="#">Data Science</a>
-                </div></div></li>
+                </div></div> -->
+            </li>
             </ul>
         </div>
     </div>
@@ -36,11 +41,22 @@
         <div class="curved-div" >
             <h1>Hi, I'm Danieva</h1>
             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In orci lorem, porttitor nec vulputate sit amet, fermentum a purus....</p>
-            <p> test div</p>
-            <p> next div</p>
-            <p> next div</p>
-            <p> next div</p>
-            <p> next div</p>
+
+            <!-- carousel -->
+            <div id="slider">
+                <input type="radio" name="slider" id="s1"  />
+                <input type="radio" name="slider" id="s2" checked/>
+                <input type="radio" name="slider" id="s3" />
+                <label for="s1" id="slide1">
+                  <img src="assets/cropped_grad.jpeg" alt />
+                </label>
+                <label for="s2" id="slide2">
+                  <img src="assets/cropped_night.jpeg" alt />
+                </label>
+                <label for="s3" id="slide3">
+                  <img src="assets/cropped_outdoor.jpeg" alt />
+                </label>
+              </div>
         </div>     
         <div id="curved-div">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#eb4d4b" fill-opacity="0.8" d="M0,128L80,128C160,128,320,128,480,160C640,192,800,256,960,256C1120,256,1280,192,1360,160L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
