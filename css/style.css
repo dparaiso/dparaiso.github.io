@@ -213,20 +213,30 @@ ul li:hover ul.dropdown {
     display: block; 
   }
 
+/* .left-align {
+    float: left;
+    padding-left: 40%;
+} */
+
 #slider {
     position: relative;
+    float: left; 
+    left: 10%;
     width: 80%;
-    height: 32vw; 
-    margin: 80px auto; 
+    margin: auto; 
+    max-width: 100%;
+    width: 32vw; /* Set the width to match the height */
+    height: 32vw; /* Maintain the same height */
     transform-style: preserve-3d;
     font-family: "Helvetica Neue", sans-serif;
-    perspective: 100%;
+    border-radius: 50%;
+    perspective: 1400px;
 }
 
 input[type="radio"] {
     position: relative;
     top: 108%; 
-    left: 50%; 
+    left: 15%; 
     width: 18px;
     height: 18px; 
     margin: 0 15px 0 0; 
@@ -251,8 +261,9 @@ input[type="radio"]:checked {
     left: 0; 
     width: 100%; 
     height: 100%; 
-    /* border-radius: 50%;  */
+    border-radius: 50%; 
     color: white;
+    object-fit: cover;
     /* font-size: 70px;
     font-weight: bold; */
     cursor: pointer; 
