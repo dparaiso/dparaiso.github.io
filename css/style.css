@@ -36,6 +36,25 @@ a:hover {
     color: purple; 
 }
 
+#topBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 10000; 
+    font-size: 1em; 
+    border: none; 
+    outline: none; 
+    background-color:#686de0;
+    padding: 20px; 
+    cursor: pointer; 
+    border-radius: 50%;
+}
+
+#topBtn:hover {
+    background-color: #7ed6df;
+}
+
 #wrapper {
     z-index: 100;
     background: transparent; 
@@ -75,6 +94,17 @@ a:hover {
     left: 0 */
 }
 
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
 
 .resize {
     margin-top: 15%;
@@ -82,6 +112,7 @@ a:hover {
     height: auto; 
     bottom: 50px; 
 }
+
 .container { 
     display: inline-block;
     vertical-align: middle;
@@ -269,7 +300,6 @@ ul li:hover ul.dropdown {
 
 
 .section__paragraph {
-    margin: 1rem 0; 
     transform: translateY(20px);
     opacity: 0; 
     transition: 1s ease; 
