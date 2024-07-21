@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head> 
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danieva Personal Website</title>
     <link rel="stylesheet" href="css/style.css">
@@ -20,11 +20,11 @@
                 <li><a href="#about-section">About Me</a></li>
                 <li><a href="https://github.com/dparaiso/">Github</a></li>
                 <li><a href="https://linkedin.com/in/danievaparaiso01">LinkedIn</a></li>
-                <li><a href="#">Resume</a>
-                    <ul class="dropdown">
+                <li><a href="#">Projects</a>
+                    <!-- <ul class="dropdown">
                         <li><a href=#>Data Science</a></li>
                         <li><a href=#>Software Dev</a></li>
-                    </ul>
+                    </ul> -->
                 <!-- <div class="dropdown">Resume
                 <div class="dropdown-options">
                     <a href="#">Software Dev</a>
@@ -39,10 +39,12 @@
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#eb4d4b" fill-opacity="0.8" d="M0,128L80,128C160,128,320,128,480,160C640,192,800,256,960,256C1120,256,1280,192,1360,160L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
         </div>
         <div class="curved-div" id="about-section" >
+            <div class="section">
             <div class="wrap">
-
+            
             <div class="side left-div">
                 <!-- carousel -->
+                <div class="section__paragraph">
                 <div id="slider" >
                     <input type="radio" name="slider" id="s1"  />
                     <input type="radio" name="slider" id="s2" checked/>
@@ -56,21 +58,24 @@
                     <label for="s3" id="slide3">
                     <img src="assets/cropped_outdoor.jpeg" alt />
                     </label>
-                </div>    
+                </div>
+                </div>  
             </div>
             <div class="side right-div">
-                <h1>Hi, I'm Danieva</h1>
+                <h1 class="section__paragraph">Hi, I'm Danieva</h1>
                 <br />
-                <p>I’m a new graduate of Simon Fraser University with a degree in Computer Science, 
+                <p class="section__paragraph">I’m a new graduate of Simon Fraser University with a degree in Computer Science, 
                     currently based in New Westminster, BC. My professional interests span 
                      machine learning, big data, embedded programming, and design, where I thrive on the synergy of team projects and collaborative environments. </p>
                 <br />
-                <p>Outside of work, I enjoy the great outdoors with camping and hiking, practice the art of crocheting, 
+                <p class="section__paragraph">Outside of work, I enjoy the great outdoors with camping and hiking, practice the art of crocheting, 
                      and savor the experience of exploring the city. Looking forward to connecting and creating together!</p>
                 <br />
-                <p>Connect with me on <a href="https://linkedin.com/in/danievaparaiso01">LinkedIn</a>, take a look at my <a href="https://github.com/dparaiso/">Github</a> or take a peek at my Resume</p>
+                <p class="section__paragraph">Connect with me on <a href="https://linkedin.com/in/danievaparaiso01">LinkedIn</a>, take a look at my <a href="https://github.com/dparaiso/">Github</a> or take a peek at my <a href="#">Resume</a></p>
             </div>
         </div>
+    </div>
+
 
         </div>     
         <div id="curved-div">
@@ -82,6 +87,7 @@
     </div>
     <script type="text/javascript" src="js/particles.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
+    <script src="js/scroll.js"></script>
 
 </body>
 </html>
