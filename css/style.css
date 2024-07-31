@@ -312,6 +312,17 @@ ul li:hover ul.dropdown {
     opacity: 1; 
 }
 
+.project__paragraph {
+    transform: translateY(20px);
+    opacity: 0; 
+    transition: 1s ease; 
+}
+
+.project__paragraph--visible {
+    transform: translateY(0);
+    opacity: 1; 
+}
+
 .projects {
     margin-top: 90%; 
     width: 100%;
