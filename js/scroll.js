@@ -1,12 +1,17 @@
 const paragraphs = document.querySelectorAll(".section__paragraph");
 let mybutton = document.getElementById("topBtn"); 
 
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {
+    scrollFunction();
+    scrollProject(); 
+}
 
 document.addEventListener("scroll", function () {
     paragraphs.forEach((paragraph) => {
         if (isInView(paragraph)) {
-            paragraph.classList.add("section__paragraph--visible")
+            paragraph.classList.add("section__paragraph--visible");
+        }else{
+            paragraph.classList.remove("section__paragraph--visible");
         }
     }) ;
 });
@@ -31,3 +36,11 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+function scrollProject() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    //   mybutton.style.display = "block";
+    } else {
+    //   mybutton.style.display = "none";
+    }
+  }
