@@ -1,8 +1,6 @@
 const paragraphs = document.querySelectorAll(".section__paragraph");
 const project = document.querySelectorAll(".project__paragraph");
 let mybutton = document.getElementById("topBtn"); 
-// let projects = document.getElementById("projects-info");
-// var elDistanceToTop = window.pageYOffset + el.getBoundingClientRect().top;
 
 window.onscroll = function() {
     scrollFunction();
