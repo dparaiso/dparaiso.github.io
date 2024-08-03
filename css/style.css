@@ -349,8 +349,8 @@ ul li:hover ul.dropdown {
     position: relative;
     left: 50%;
     top: 50%;
-    width:250vmax;
-    height: 250vmax;
+    width:300vmax;
+    height: 300vmax;
     border-radius: 50%;
     background-color: #686de0;
     overflow: hidden;
@@ -428,8 +428,12 @@ input[type='checkbox'] {
     transition: max-height .25s ease-in-out; 
 } 
 
+.collapsible-content img{ 
+    border-radius: 0%; 
+} 
+
 .toggle:checked + .lbl-toggle + .collapsible-content { 
-    max-height: 350px; 
+    max-height: 1000px; 
 } 
 
 .toggle:checked+.lbl-toggle { 
@@ -438,6 +442,9 @@ input[type='checkbox'] {
 } 
 
 .collapsible-content .content-inner { 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
     background: #f1f1f1;
     border-bottom-left-radius: 12px; 
     border-bottom-right-radius: 12px; 
