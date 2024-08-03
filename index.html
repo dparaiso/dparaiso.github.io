@@ -4,11 +4,12 @@
 <head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danieva Personal Website</title>
+    <title>Danieva Paraiso</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
 </head>
 <body>
-    <button onclick="topFunction()" id="topBtn"><i class="arrow up"></i></button>
+    <button onclick="topFunction()" id="topBtn"><i class="arrow up"></i> UP</button>
     <div id="wrapper">
         <div class="fade-intro">
             <img class="resize" src="assets/cropped_profile.jpg" alt="Avatar">
@@ -19,9 +20,9 @@
         <div class="fade-intro">
             <ul class = "nav">
                 <li><a href="#about-section">About Me</a></li>
+                <li><a href="#projects-info">Projects</a>
                 <li><a href="https://github.com/dparaiso/">Github</a></li>
                 <li><a href="https://linkedin.com/in/danievaparaiso01">LinkedIn</a></li>
-                <li><a href="#">Projects</a>
             </li>
             </ul>
         </div>
@@ -63,22 +64,161 @@
                 <p class="section__paragraph">Outside of work, I enjoy the great outdoors with camping and hiking, practice the art of crocheting, 
                      and savor the experience of exploring the city. Looking forward to connecting and creating together!</p>
                 <br />
-                <p class="section__paragraph">Connect with me on <a href="https://linkedin.com/in/danievaparaiso01">LinkedIn</a>, take a look at my <a href="https://github.com/dparaiso/">Github</a> or take a peek at my <a href="#">Resume</a></p>
+                <p class="section__paragraph">Connect with me on <a href="https:/linkedin.com/in/danievaparaiso1">LinkedIn</a>, take a look at my <a href="https://github.com/dparaiso/">Github</a> or take a peek at my <a href="#">Resume</a></p>
             </div>
         </div>
     </div>
+</div>     
+    <div id="curved-div">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#eb4d4b" fill-opacity="0.8" d="M0,128L80,128C160,128,320,128,480,160C640,192,800,256,960,256C1120,256,1280,192,1360,160L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+    </div>
 
+    <div class="projects">
 
-        </div>     
-        <div id="curved-div">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#eb4d4b" fill-opacity="0.8" d="M0,128L80,128C160,128,320,128,480,160C640,192,800,256,960,256C1120,256,1280,192,1360,160L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+        <div class="block block--1">
+    
+            <div class="dot"></div>  
+            
         </div>
-    </div>
-    <div id="particles-js">
+        <div id="projects-info" class="project__paragraph">  
+            <h1>My Projects</h1>
+
+            <div class="wrap-collabsible"> 
+                <input id="collapsible1" class="toggle" type="checkbox"> 
+                <label for="collapsible1" class="lbl-toggle" tabindex="0">Heart Disease Neural Network</label>
+                <div class="collapsible-content"><div class="content-inner">
+                    <p>Developed and optimized a neural network to predict heart disease, incorporating several advanced techniques for improved performance. 
+                        I used effective weight initialization methods to ensure faster convergence and mitigate the risk of vanishing or exploding gradients. 
+                        To prevent overfitting, I implemented L2 regularization, which adds a penalty term to the loss function and discourages large weights. 
+                        Mini-batch gradient descent was employed to update the network's weights efficiently by computing the gradient on small, random subsets 
+                        of the training data, balancing stability and speed. Additionally, I applied gradient descent optimization with momentum, which uses past 
+                        gradients to smooth out updates, helping the network navigate the loss landscape more effectively and avoid local minima. For more details please see <a href="https://github.com/dparaiso/Neural-Network-Project">here</a></p>
+                </div>
+                </div>
+
+
+                <input id="collapsible2" class="toggle" type="checkbox"> 
+                <label for="collapsible2" class="lbl-toggle" tabindex="0">Image Classification</label>
+                <div class="collapsible-content"><div class="content-inner">
+                    <p>Machine learning algorithm that makes predictions about whether an input image contains a cat or not. Program has the following structure</p>
+                    <img src="assets/neural-network-diagram.png" style="max-width: 100%; display: block;" alt />
+                </br>
+                    <p>Please contact me for more detailed information on this project. </p>
+                </div>
+                </div>
+
+
+                <input id="collapsible3" class="toggle" type="checkbox"> 
+                <label for="collapsible3" class="lbl-toggle" tabindex="0">Covid Managment Hotel</label>
+                <div class="collapsible-content"><div class="content-inner">
+                    <p>Final project for database course (CMPT 354) involved developing a comprehensive web application centered around a relational database. 
+                        Program was implementing using MySQL for robust data management and Apache for efficient server operations. The front-end interface was 
+                        crafted using PHP and HTML to provide an intuitive and seamless user experience. Key features included the implementation of CRUD operations; enabling users to interact with the database effortlessly. 
+                        This project successfully demonstrated full functionality and usability, earning a perfect grade and showcasing the effectiveness of our design and implementation choices.
+                        Details can be found <a href="https://github.com/dparaiso/NBA-Hotel-Database/tree/main">here</a> </p>
+                </div>
+                </div>
+
+
+                <input id="collapsible4" class="toggle" type="checkbox"> 
+                <label for="collapsible4" class="lbl-toggle" tabindex="0">Dementia App</label>
+                <div class="collapsible-content"><div class="content-inner">
+                <p>A helpful reminder android application for care takers and patients with dementia. Stores unique schedules, pictures, and instructions, 
+                    for each patient and reminds them of a given task at a set time using the information provided. For more deteails, please see <a href="https://github.com/dparaiso/Shamrock/tree/main/cmpt276_team2-master">here</a> </p>
+                </div>
+                </div>
+
+
+                <input id="collapsible5" class="toggle" type="checkbox"> 
+                <label for="collapsible5" class="lbl-toggle" tabindex="0">Find The Dot</label>
+                <div class="collapsible-content"><div class="content-inner">
+                    <p>This embedded project replicates a balance shooting game, featuring an LED PRU, accelerometer, joystick, PWM buzzer, and a 14-segment display. The following is a
+                        sketch of how the board operates
+                    </p>
+                    <img src="assets/findDotBoard.png" alt="" style="max-width: 75%; height: auto;"/>
+                    <p>For more on this project see <a href="https://github.com/dparaiso/Find-the-Dot-Game">here</a> </p>
+                </div>
+                </div>
+
+
+                <input id="collapsible6" class="toggle" type="checkbox"> 
+                <label for="collapsible6" class="lbl-toggle" tabindex="0">Movie Data Analysis</label>
+                <div class="collapsible-content"><div class="content-inner">
+                    <p>Conducted ETL on historical movie datasets from IMDB, Wikipedia, and Kaggle for analysis. 
+                        Applied linear regression, ANOVA, Tukey's Post Hoc Analysis, and other mathematical/statistical techniques to 
+                        derive informed conclusions. For the full analysis please see <a href="https://github.com/dparaiso/Movie-Data-Analysis">here</a></p>
+                </div>
+                </div>
+
+
+                <input id="collapsible7" class="toggle" type="checkbox"> 
+                <label for="collapsible7" class="lbl-toggle" tabindex="0">Go Local</label>
+                <div class="collapsible-content"><div class="content-inner">
+                    <p>A hackathon project featuring an HTML/CSS website that leverages Firebase Firestore and JavaScript 
+                        to manage details of local businesses. Business owners can add their businesses to the website's listing page, 
+                        alongside other local entries. The project involved prototyping and design using sketches and creating the user 
+                        interface with Figma. More details can be found <a href="https://github.com/dparaiso/StormHacks">here</a>. The following is a storyboard of the page</p>
+                    <img src="assets/goLocal.png" style="max-width: 75%; height: auto;"  alt/>
+                </div>
+                </div>
+
+
+                <input id="collapsible8" class="toggle" type="checkbox"> 
+                <label for="collapsible8" class="lbl-toggle" tabindex="0">Reddit & Nasa Data Correlation</label>
+                <div class="collapsible-content"><div class="content-inner">
+                    <p>This project involves two main tasks: analyzing Reddit comments and exploring server log correlation. 
+                        For the Reddit analysis, we calculate the average score for each subreddit and  identify the author of the 
+                        "best" comment, defined as the one with the highest score relative to the subreddit's average. 
+                        These results are outputted in a JSON format.  In the server log correlation task, we analyze NASA web logs from 1995 
+                        to determine the correlation between the number of requests made by a host and the total bytes transferred. 
+                        I developed a Spark program to process the logs, compute necessary sums, and caluculate the correlation coeffiecient 
+                        and its square. Both tasks involve data extraction, transformation, and analysis to derive meaningful insights. 
+                        For further detail please email me. </p>
+                </div>
+                </div>
+
+
+                <input id="collapsible9" class="toggle" type="checkbox"> 
+                <label for="collapsible9" class="lbl-toggle" tabindex="0">AmbiLamp</label>
+                <div class="collapsible-content"><div class="content-inner">
+                    <p> This was my first independent project. In a team of four, I designed and fully implemented a portable lamp that changes brightness based on ambient light.
+                        I programmed the Arduino using C to read analog light sensor values and send signals for automatic light adjustment.
+                        Also assisted in implementing a circuit to adjust the current flow using N-MOSFETs and diodes, ensuring efficient and responsive brightness control. 
+                        You can see more detailed information <a href="https://github.com/dparaiso/AMBILamp">here</a></p>
+                </div>
+                </div>
+
+
+                <input id="collapsible10" class="toggle" type="checkbox"> 
+                <label for="collapsible10" class="lbl-toggle" tabindex="0">Fort Game</label>
+                <div class="collapsible-content"><div class="content-inner">
+                    <p>Implemented a Java-based game with a web interface, reminiscent of Battleship but with unique variations. 
+                        The user interface, showcased in the attached image, was developed using RESTful API and Spring Boot. </p>
+                    <img src="assets/fortGameCheat.png" style="max-height: 30%; width: auto; max-width: 100%; display: block;" alt>
+                    <p>More details listed <a href="https://github.com/dparaiso/FortGame-WebInterface">here</a></p>
+                </div>
+                </div>
+            </div>
         
+        </div>
+        </div>
+
+        </div>
+          <div class="block block--2"></div>
+
     </div>
+
+    </div>
+    </div>
+
+
+    <div id="particles-js"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="js/circle.js"></script>
     <script type="text/javascript" src="js/particles.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
+    <script src="js/collapsible.js"></script>
     <script src="js/scroll.js"></script>
 
 </body>

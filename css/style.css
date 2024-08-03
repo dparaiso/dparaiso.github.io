@@ -13,6 +13,7 @@ body {
     position: relative;
     text-align: center; /* Ensures the text within child elements is centered */
     background: transparent;
+    overflow-x: hidden; 
 }
 
 div,p {
@@ -49,6 +50,7 @@ a:hover {
     padding: 20px; 
     cursor: pointer; 
     border-radius: 50%;
+    border-color: white;
 }
 
 #topBtn:hover {
@@ -109,7 +111,8 @@ a:hover {
     margin-top: 15%;
     width: 300px; 
     height: auto; 
-    bottom: 50px; 
+    bottom: 50px;
+
 }
 
 .container { 
@@ -120,7 +123,7 @@ a:hover {
 .typer {
     font-size: 2em; 
     letter-spacing: 10px;
-    font-family: Courier; 
+    font-family: -apple-system, Courier,  Monaco, monospace; 
     font-weight: 500;
     border-right: 5px solid; 
     padding-top: 0; 
@@ -146,7 +149,7 @@ a:hover {
     padding: 0; 
     font-size:1em; 
     font-weight: 100; 
-    font-family: calibri;
+    font-family: -apple-system, calibri, sans-serif;
     white-space: nowrap;
 }
 
@@ -227,6 +230,7 @@ ul li:hover ul.dropdown {
   .curved-div h1 {
     padding: 0; 
     margin: 0; 
+    margin-top: 0px; 
     font-size: 4rem;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
@@ -240,7 +244,9 @@ ul li:hover ul.dropdown {
   #curved-div svg {
     width: 100%; 
     height: 100%; 
-    display: block; 
+    display: flex; 
+    padding: 0; 
+    margin: 0; 
   }
 
 .about-info {
@@ -264,16 +270,19 @@ ul li:hover ul.dropdown {
   }
 
 .left-div {
-    padding: 10px; 
+    padding-left: 10px; 
+    padding-right: 10px; 
+    padding-bottom: 0px;
     padding-top: 20px; 
 }
 
 .right-div {
     padding: 20px;
+    padding-bottom: 0px;        
     text-align: left;
     display: flex;
     flex-direction: column;
-    overflow:auto; 
+    overflow-y:hidden; 
 }
 
 .right-div a{
@@ -301,6 +310,173 @@ ul li:hover ul.dropdown {
 .section__paragraph--visible {
     transform: translateY(0);
     opacity: 1; 
+}
+
+.project__paragraph {
+    transform: translateY(20px);
+    opacity: 0; 
+    transition: 1s ease; 
+}
+
+.project__paragraph--visible {
+    transform: translateY(0);
+    opacity: 1; 
+}
+
+.projects {
+    margin-top: 90%; 
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* flex; */
+}
+
+.projects h1{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    font-size: 2rem;
+    color: white;
+}
+
+.block {
+    width: 100%;
+    height: 50vh;
+    padding: 0; 
+}
+
+.dot {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width:300vmax;
+    height: 300vmax;
+    border-radius: 50%;
+    background-color: #686de0;
+    overflow: hidden;
+    padding: 0; 
+    margin: 0; 
+    overflow-x: hidden; 
+}
+
+input[type='checkbox'] { 
+    display: none; 
+} 
+
+.wrap-collabsible { 
+    /* margin: 1rem 0; */
+    width: 50%; 
+} 
+
+.lbl-toggle { 
+    display: block; 
+    font-weight: bold; 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    font-size: 1rem; 
+    text-align: center; 
+    padding: 18px; 
+    margin-top: 10px; 
+    color: #DDD;
+    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+    cursor: pointer; 
+    border-radius: 12px; 
+    transition: all 0.25s ease-out; 
+} 
+
+.lbl-toggle:nth-of-type(1), .lbl-toggle:nth-of-type(6){
+    background-color: #eb4d4b;
+}
+
+.lbl-toggle:nth-of-type(2), .lbl-toggle:nth-of-type(7){
+    background-color: #e056fd;
+}
+
+.lbl-toggle:nth-of-type(3), .lbl-toggle:nth-of-type(8){
+    background-color: #f9ca24;
+}
+
+.lbl-toggle:nth-of-type(4), .lbl-toggle:nth-of-type(9){
+    background-color: #badc58;
+} 
+
+.lbl-toggle:nth-of-type(5), .lbl-toggle:nth-of-type(10){
+    background-color: #7ed6df;
+}
+
+.lbl-toggle:hover { 
+    background-color: #777; 
+} 
+
+.lbl-toggle::before { content: ' '; 
+    display: inline-block; 
+    border-top: 5px solid transparent; 
+    border-bottom: 5px solid transparent; 
+    border-left: 5px solid currentColor; 
+    vertical-align: middle; 
+    margin-right: .7rem; 
+    transform: translateY(-2px); 
+    transition: transform .2s ease-out; 
+}
+
+.toggle:checked+.lbl-toggle::before { 
+    transform: rotate(90deg) translateX(-3px); 
+} 
+
+.collapsible-content { 
+    max-height: 0px; 
+    overflow: hidden; 
+    transition: max-height .25s ease-in-out; 
+} 
+
+.collapsible-content img{ 
+    border-radius: 0%; 
+} 
+
+.toggle:checked + .lbl-toggle + .collapsible-content { 
+    max-height: 1000px; 
+} 
+
+.toggle:checked+.lbl-toggle { 
+    border-bottom-right-radius: 0; 
+    border-bottom-left-radius: 0; 
+} 
+
+.collapsible-content .content-inner { 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    background: #f1f1f1;
+    border-bottom-left-radius: 12px; 
+    border-bottom-right-radius: 12px; 
+    padding: .5rem 1rem; 
+} 
+
+
+.collapsible-content p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    margin-bottom: 0; 
+    text-shadow: none;
+}
+
+.collapsible-content a {
+    color: blue; 
+    text-shadow: none;
+}
+
+.collapsible-content a:hover {
+    color: purple; 
+    text-shadow: none;
+}
+
+
+#projects-info {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    /* padding-top: -4px; */
+    /* background-color: #686DE0;  */
 }
 
 #slider {
@@ -357,6 +533,13 @@ input[type="radio"]:checked {
     transition: transform 400ms ease; 
 }
 
+/* #slide2 {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+} */
 
 /* Active Slide */
 #s1:checked ~ #slide2,
@@ -404,6 +587,12 @@ input[type="radio"]:checked {
     }
  }
 
+ @keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}
+
  @media all and (min-width: 1000px) {
     .side{
         flex: 1; 
@@ -450,11 +639,14 @@ input[type="radio"]:checked {
         cursor: default; 
         padding: 5px; 
     }
-    
-    img {
-        width: 10%; 
-        height: 10%; 
+
+    .resize {
+        margin-top: 15%;
+        width: 100px; 
+        height: auto; 
+        bottom: 70px; 
     }
-    
+
+
  }
 
