@@ -29,7 +29,6 @@ img {
 a {
     text-decoration: none;
     color: inherit; 
-
 }
 
 a:hover {
@@ -124,7 +123,7 @@ a:hover {
     font-size: 2em; 
     letter-spacing: 10px;
     font-family: -apple-system, Courier,  Monaco, monospace; 
-    font-weight: 500;
+    /* font-weight: 500; */
     border-right: 5px solid; 
     padding-top: 0; 
     padding-bottom: 0;
