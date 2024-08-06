@@ -594,6 +594,10 @@ input[type="radio"]:checked {
 }
 
  @media all and (min-width: 1000px) {
+    body{
+        overflow-x: hidden; 
+    }
+
     .side{
         flex: 1; 
     }
@@ -652,6 +656,8 @@ input[type="radio"]:checked {
         bottom: 70px; 
     }
 
-
+    body{
+        overflow-x: hidden; 
+    }
  }
 
